@@ -2,6 +2,10 @@
 
 <p align="center"><strong>Developed by Sutanu Chatterjee (Trial Task for PRISM)</strong></p>
 
+[Live dashboard](https://ronnismad.github.io/prism-ntpc-research-dashboard/) · [Source repository](https://github.com/ronnismad/prism-ntpc-research-dashboard)
+
+[Presentation PDF](submission/PRISM-NTPC-Trial-Project.pdf) · [Editable PowerPoint](submission/PRISM-NTPC-Trial-Project.pptx) · [Reviewer guide](submission/Reviewer-Guide.pdf) · [Transparent flowchart](submission/NTPC-Research-Flowchart.png)
+
 A React dashboard for a Prism trial project. It asks whether public station-level observations can reveal generation momentum before financial results. The design takes inspiration from Prism’s dark, restrained website. This is an independent prototype, not an official Prism or NTPC product.
 
 The multi-quarter extension covers eight quarters, Q1 FY25 through Q4 FY26, at fixed day-45/60/75 cutoffs. At day 60, run-rate MAPE is **1.50%** versus **2.20%** for a competitive seasonal-profile baseline, winning **5 of 8** quarters. These are historical generation estimates, not stock-return forecasts. See [the reproducible study report](docs/BACKTEST_RESULTS.md).
@@ -72,7 +76,7 @@ Upload the contents of this `ntpc-dashboard` folder as the root of a repository.
 3. Choose **GitHub Actions** as the source.
 4. Run the included **Deploy dashboard to GitHub Pages** workflow, or push to `main`.
 
-The workflow runs tests, builds the app and deploys `dist`. Vite uses relative asset paths so a repository subpath works without configuration. Navigation uses local React state and hash links rather than server routes, avoiding Pages refresh errors. `/#backtest` opens Historical evaluation, and `/#investment` opens Investment decision. This project has not been uploaded or published automatically.
+The workflow runs tests, builds the app and deploys `dist`. Vite uses relative asset paths so a repository subpath works without configuration. Navigation uses local React state and hash links rather than server routes, avoiding Pages refresh errors. `/#backtest` opens Historical evaluation, and `/#investment` opens Investment decision. The repository and hosted demo are published at the links above. The hosted bot runs instant matching; local Ollama remains optional.
 
 ## Working features
 
@@ -226,4 +230,4 @@ The ingest script downloads the fixed historical endpoints and fails if a statio
 
 Before production use, prioritise verified first-public timestamps, a broader legal-entity/station map, prospective holdout quarters, recurring-earnings and financing scenarios, peer comparisons, and a larger assistant evaluation set. Hosted LLM support remains a separate future integration requiring an appropriate backend and service account.
 
-The older DMart flowchart and presentation in the parent project folder describe the initial proposal. The current software is the NTPC project; its up-to-date flowchart is in Methodology. No remote repository or public deployment has been created automatically.
+The older DMart flowchart and presentation in the parent project folder describe the initial proposal. The current software is the NTPC project; its up-to-date flowchart is in Methodology. The current source is published on GitHub, with the static dashboard on GitHub Pages. The `submission/` folder contains the current presentation, reviewer guide and workflow exports.

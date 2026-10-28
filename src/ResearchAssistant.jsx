@@ -13,7 +13,7 @@ export function ResearchAssistant({onNavigate}){
   const close=()=>{setOpen(false);launcher.current?.focus();};
   useEffect(()=>{if(!open)return;input.current?.focus();const key=e=>{if(e.key==='Escape')close();};document.addEventListener('keydown',key);return()=>document.removeEventListener('keydown',key);},[open]);
   useEffect(()=>{if(thread.current)thread.current.scrollTop=thread.current.scrollHeight;},[messages,busy,open]);
-  useEffect(()=>{if(!open||local!==null)return;let active=true;fetch(`${import.meta.env.BASE_URL}api/research-assistant/status`,{signal:AbortSignal.timeout(4000)}).then(r=>r.ok?r.json():null).then(data=>{if(active)setLocal(data?.available?data:{available:false});}).catch(()=>{if(active)setLocal({available:false});});return()=>{active=false;};},[open,local]);
+  useEffect(()=>{if(!open||local!==null)return;if(!['127.0.0.1','localhost','[::1]'].includes(window.location.hostname)){setLocal({available:false});return;}let active=true;fetch(`${import.meta.env.BASE_URL}api/research-assistant/status`,{signal:AbortSignal.timeout(4000)}).then(r=>r.ok?r.json():null).then(data=>{if(active)setLocal(data?.available?data:{available:false});}).catch(()=>{if(active)setLocal({available:false});});return()=>{active=false;};},[open,local]);
   useEffect(()=>()=>request.current?.abort(),[]);
   const clear=()=>{generation.current++;request.current?.abort();setBusy(false);setMessages([]);setQuestion('');input.current?.focus();};
   async function ask(text){

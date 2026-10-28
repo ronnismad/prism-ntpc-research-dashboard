@@ -1,0 +1,5 @@
+* text=auto eol=lf
+public/sources/** -text
+*.png -text
+*.pdf -text
+*.pptx -text
