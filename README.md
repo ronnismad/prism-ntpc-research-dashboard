@@ -12,6 +12,16 @@ The multi-quarter extension covers eight quarters, Q1 FY25 through Q4 FY26, at f
 
 ![Current dashboard and developer credit](docs/project-preview.png)
 
+## Problem, audience and useful output
+
+**Problem:** public operating updates need a transparent test and financial context before an analyst uses them as investment evidence.
+
+**What is built:** an NTPC dashboard that combines a generation backtest, consolidated financial analysis, explicit valuation assumptions and source-linked answers.
+
+**Who it helps and why Prism:** Prism’s research analysts and product team can inspect the value of an early signal, challenge assumptions and follow sources. This connects directly to the trial brief’s financial and alternative datasets, quantitative methods and natural-language research tools.
+
+**Most useful output:** the Investment decision view is a source-backed research brief. It explains the watchlist assessment, financial risks and an editable entry-price screen. The historical evaluation supplies supporting evidence about the generation signal. The submission deck now presents these points in eight concise slides, including a dedicated flowchart and simplified charts.
+
 ## Dashboard guide
 
 | Section | What it offers |
