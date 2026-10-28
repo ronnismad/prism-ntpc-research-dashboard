@@ -1,0 +1,24 @@
+{
+  "name": "ntpc-generation-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/analysis.test.js tests/backtest.test.js tests/financials.test.js tests/assistant.test.js",
+    "study:export": "node scripts/export_backtest.mjs",
+    "assistant:eval": "node scripts/evaluate_assistant.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.63.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "recharts": "3.10.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "vite": "6.4.1"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "basis": "NTPC consolidated; crore rupees except per-share data",
+  "capturedAt": "2026-10-29",
+  "quote": {
+    "close": 303.75,
+    "date": "2026-10-28",
+    "symbol": "NTPC",
+    "series": "EQ",
+    "source": "nse"
+  },
+  "annual": {
+    "source": "annual",
+    "current": {
+      "label": "FY26",
+      "ended": "2026-03-31",
+      "revenue": 187384.63,
+      "ownerProfit": 27052.52,
+      "groupProfit": 27545.76,
+      "pbtBeforeRegulatory": 27133.56,
+      "deferredTaxExpense": -7410.21,
+      "regulatoryNetTax": -2464.22,
+      "eps": 27.9,
+      "cfo": 50901.81,
+      "cashCapex": 44049.78,
+      "assetSaleProceeds": 42.91,
+      "interestPaid": 17537.73,
+      "dividendsPaid": 8759.26,
+      "borrowings": 267258.2,
+      "leases": 3746.38,
+      "cash": 3421.63,
+      "otherBankBalances": 4582.15,
+      "ownerEquity": 203175.67,
+      "shareCapital": 9696.67,
+      "dividend": 9,
+      "interestServiceCoverage": 4.42,
+      "debtServiceCoverage": 1.23
+    },
+    "prior": {
+      "label": "FY25",
+      "ended": "2025-03-31",
+      "revenue": 188138.06,
+      "ownerProfit": 23422.46,
+      "groupProfit": 23953.15,
+      "pbtBeforeRegulatory": 28496.41,
+      "deferredTaxExpense": 4173.97,
+      "regulatoryNetTax": 3701.92,
+      "eps": 24.16,
+      "cfo": 50487.84,
+      "cashCapex": 41335.25,
+      "assetSaleProceeds": 278.32,
+      "interestPaid": 17873.54,
+      "dividendsPaid": 8206.54,
+      "borrowings": 247575.12,
+      "leases": 2521.03,
+      "cash": 1426.56,
+      "otherBankBalances": 10030.54,
+      "ownerEquity": 184071.16,
+      "shareCapital": 9696.67
+    }
+  },
+  "quarter": {
+    "source": "quarter",
+    "current": {
+      "label": "Q1 FY27",
+      "ended": "2026-06-30",
+      "revenue": 50740.96,
+      "ownerProfit": 6721.05,
+      "groupProfit": 6896.44,
+      "eps": 6.93,
+      "borrowings": 272081.67,
+      "debtEquity": 1.3
+    },
+    "prior": {
+      "label": "Q1 FY26",
+      "ended": "2025-06-30",
+      "revenue": 47064.35,
+      "ownerProfit": 6010.6,
+      "groupProfit": 6108.46,
+      "eps": 6.2,
+      "borrowings": 248359.48,
+      "debtEquity": 1.31
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "FY26 audited results",
+      "file": "sources/ntpc-audited-fy26.pdf",
+      "url": "https://nsearchives.nseindia.com/corporate/9425178051_23052026151711_NTPCAFR26.pdf",
+      "published": "2026-05-23",
+      "pages": {
+        "earnings": 16,
+        "ratios": 17,
+        "balance": 18,
+        "cash": 20,
+        "tax": 22,
+        "dividend": 2
+      },
+      "sha256": "fd3fb90b6af232aba31564e98278411175ca3b050b52f0c096301b53ebac2736"
+    },
+    {
+      "id": "quarter",
+      "label": "Q1 FY27 unaudited results · limited review",
+      "file": "sources/ntpc-q1-fy27.pdf",
+      "url": "https://ntpc.co.in/sites/default/files/financial_results/2026/QFRQ1FY27.pdf",
+      "published": "2026-07-24",
+      "pages": {
+        "earnings": 10,
+        "ratios": 11
+      },
+      "sha256": "361885f842006a0fc22a21b785a9267991585ded6fb2971d59f23af3f7d0ea76"
+    },
+    {
+      "id": "nse",
+      "label": "NSE daily bhavcopy · NTPC / EQ row",
+      "file": "sources/nse-bhavcopy-2026-10-28.csv",
+      "url": "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_28102026.csv",
+      "published": "2026-10-28",
+      "sha256": "567be81b423dee706c91a1e79842ec8f875fe48a87b1212350067a2f7a62d720"
+    }
+  ],
+  "notes": [
+    "Annual revenue uses the original May audited filing. July's Q1 filing reclassifies FY26 revenue/other income by 5.90 crore; total income and profit are unchanged. No revenue TTM is computed across those presentations.",
+    "FY26 dividend is 2.75 + 2.75 interim plus 3.50 recommended final in the May filing; the displayed yield is an indicated FY26 distribution, not a forecast or confirmation of final payment.",
+    "CFO excludes financing interest paid. Cash after capex is not cash available to equity. The cash bridge subtracts interest and dividends separately; it is not a full cash reconciliation.",
+    "Borrowings exclude leases. March net debt adds current/non-current leases and subtracts cash equivalents only, excluding other bank balances and investments. June debt is newer but June cash and lease balances are not supplied in this dataset.",
+    "TTM EPS uses 27.90 + 6.93 - 6.20 = 28.63, based on rounded disclosed EPS. Tax/regulatory effects remain; this is not normalized earnings.",
+    "Financial inputs are a dated company snapshot, independent of the retrospective generation backtest. They are never used to generate historical forecasts. No automated refresh is configured."
+  ]
+}
